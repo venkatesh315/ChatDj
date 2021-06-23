@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'mychat',
     'captcha',
-    'channels',
+   
 
 ]
 
