@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Profile details{% endblock %}
+
+
+{% block content %}
+<h1 class="mt-2">Profile Search</h1>
+
+<div class="container">
+
+          <hr class="mt-0 mb-4">
+
+            <form method="get">
+            {{user_form.form}}
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+
+    {% for us in all %}
+        <h3>Requested Information</h3>
+        <p>First Name: {{us.first_name}} </p>
+        <p>Last Name: {{us.last_name}} </p>
+        <p>Email ID: {{us.email}} </p>
+    {% endfor %}
+</div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
