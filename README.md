@@ -1,2 +1,1 @@
-# ChatDj
-Django project
+
